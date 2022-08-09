@@ -1,0 +1,9 @@
+Para lograr posicionar el sitio web de manera orgánica en google se han llevado a cabo las siguientes acciones:
+
+• El sitio web es responsive. 
+• Se han especificado textos alternativos a cada una de las imágenes dentro del index. 
+• Se creó tanto una meta description como meta tittle para las diferentes páginas. 
+• Se seleccionaron keywords específicas.
+• Se tuvo en cuenta a la hora de elaborar el html la semántica del mismo.
+• Únicamente hay un h1 en la página index.
+
