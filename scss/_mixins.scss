@@ -1,0 +1,38 @@
+//texto
+@mixin text($fontSize, $color, $mainFont, $align){
+	font-size: $fontSize;
+	color: $color;
+	font-family: $mainFont;
+	text-align: $align;
+}
+
+//flex
+@mixin dFlex($direc, $justify, $align){
+	display: flex;
+	flex-direction: $direc;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin medias($breakpoint){
+	@if $breakpoint == mobile{
+		@media (min-width: 320px){
+			@content;
+		}
+	}
+	@if $breakpoint == tablet {
+		@media (min-width: 400px) {
+			@content;
+		}
+	}
+	@if $breakpoint == medio {
+		@media (min-width: 600px) {
+			@content;
+		}
+	}
+	@if $breakpoint == desktop{
+		@media (min-width: 1000px){
+			@content;
+		}
+	}
+}

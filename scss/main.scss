@@ -1,0 +1,361 @@
+//vars globales
+@import "_vars.scss";
+@import "_mixins";
+@import "_font";
+@import "_navBar";
+@import "_footer";
+
+//clases base
+.dst{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+//index - primera pantalla
+.idxSct1Div{
+	background-image: url(../img/index/primeraPantalla-mf.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	height: 60vh;
+	@include dFlex (column, top, center);
+	.idxSct1H1{
+	margin-top: 10%;
+	@include text($fsz-sm, $black, $mainFont, center)
+	}
+	.idxSct1H3{
+	font-family: $mainFont;
+	font-size: $fsz-xsm;
+	font-weight: $light;
+	}
+}
+
+//index - primera pantalla responsive
+.idxSct1Div{
+	@include medias(medio) {
+	}
+	@include medias(desktop) {
+	background-image: url(../img/index/valeria-ds.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.idxSct1H1{
+	margin-left: 0px;
+	@include text($fsz-lg, $white, $mainFont, bottom);
+	}
+	.idxSct1H3{
+	font-family: $mainFont;
+	font-size: $fsz-md;
+	font-weight: $light;	
+	color: $white;	
+	}
+	}
+}
+
+//index - 3textos
+.idxSct2Div{
+	padding: 0 10px;
+	.idxSct2Div2{
+	@include dFlex (column, center, center);
+	box-shadow: 1px 1px 6px 1px rgba(231,232,235,0.6);
+	-webkit-box-shadow: 1px 1px 6px 1px rgba(231,232,235,0.6);	
+	-moz-box-shadow: 1px 1px 6px 1px rgba(231,232,235,0.6);
+	margin: 5px;
+	padding: 5px 0px;
+	.idxSct2H2{
+	font-size: $fsz-xsm;
+	font-family: $mainFont;
+	}
+	.idxSct2P{
+	font-size: $fsz-xxsm;
+	font-family: $mainFont;
+	}
+	}
+}
+
+//index - 3textos respo
+.idxSct2Div{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+//index - texto e imagen
+.idxSct3Div{
+	@include dFlex (column, center, center);
+	padding: 15px;
+	background-color: $mainColor;
+	.idxSct3Img{
+	height: 50%;
+	width: 100%;
+	}
+	.idxSct3H3{
+	@include text($fsz-xsm, $white, $mainFont, justify);
+	margin: 5px 0;
+	}
+	.idxSct3P{
+	@include text($fsz-xxsm, $white, $mainFont, justify);
+	}
+}
+
+//index - texto e imagen respo
+.idxSct3Div{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: flex;
+		flex-direction: row;
+		.idxSct3Img{
+			height: 450px;
+			width: 450px;
+			margin-right: 10px;
+		}
+	}
+}
+
+//index - ultimas noticias
+.carruselDsk{
+	display: none;
+}
+
+.idxSct4H3{
+	@include text($fsz-xsm, $black, $mainFont, center);
+	margin-top: 10px;
+}
+
+.idxSct4P{
+	@include text($fsz-xxsm, $black, $mainFont, center);
+}
+
+.idxSct4Div{
+	padding: 0 20px 0 20px;
+}
+
+.idxSctInp{
+	font-size: .7em;
+	border:none;
+	height: 5px;
+}
+
+.idxSctSnd{
+	font-size: .7em;
+}
+
+//index - ultimas noticias respo
+.carrusel{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: none;
+	}
+}
+
+.idxSctInp{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		font-size: 10rem;
+	}
+}
+
+//sobre vale - guarda y titulo
+.svSctH2{
+	@include text($fsz-md, $black, $mainFont, left);	
+	font-weight: $light;
+	@include dFlex (column, center, left);
+	padding-left: 5px;
+	background-image: url(../img/sobreVale/fondo.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 15vh;
+}
+
+//sobre vale - texto e imagenes
+.svSctDiv{
+	padding: 5px;
+	@include dFlex (column, center, center);
+	.svSctP{
+	padding: 5px;
+	@include text($fsz-xxsm, $black, $mainFont, justify);
+	}
+	.svSctImg{
+		height: 300px;
+		width: 280px;
+	}
+}
+
+.svSctDiv{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.svSctDiv2{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: flex;
+		justify-content: space-around;
+	}	
+}
+
+.svSctP{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		width: 60%;
+	}
+}
+
+//Novedades
+.nvdsSctH3{
+	@include text($fsz-md, $black, $mainFont, left);	
+	font-weight: $light;
+	@include dFlex (column, center, left);
+	padding-left: 5px;
+	background-image: url(../img/sobreVale/fondo.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 15vh;
+}
+
+.nvdsSctDiv{
+	background-color: $secondaryColor;
+	@include dFlex (column, center, center);
+	padding: 15px;
+	.nvdsSctDiv2{
+	background-color: $white;
+	height: 50%;
+	width: 80%;
+	margin: 10px;
+	@include dFlex (column, center, center);
+	.linea{
+	margin-top: 5px;
+	height: 2px;
+	width: 50px;
+	background-color: $mainColor;
+	}
+	.nvdsSctH2{
+	margin-top: 5px;
+	@include text($fsz-xsm, $black, $mainFont, center);
+	}
+	.nvdsSctP{
+	@include text($fsz-xxsm, $black, $mainFont, center);
+	font-weight: $light;		
+	}	
+	}
+}
+
+.nvdsSct4H3{
+	@include text($fsz-sm, $black, $mainFont, center);
+}
+
+.carruselDsk{
+	display: none;
+}
+
+//Novedades resp
+.nvdsSctDiv{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.mf{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		display: none;
+	}
+}
+
+.carruselDsk{
+	@include medias(medio) {
+
+	}
+	@include medias(desktop) {
+		margin: 30px;
+		display: flex;
+	}
+}
+
+//Libros
+.lbrSctH3{
+	@include text($fsz-md, $black, $mainFont, left);	
+	font-weight: $light;
+	@include dFlex (column, center, left);
+	padding-left: 5px;
+	background-image: url(../img/sobreVale/fondo.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 15vh;
+}
+
+//Libros Respo
+.librosFlex{
+	@include medias(medio) {
+	}
+	@include medias(desktop) {
+		margin: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+.card{
+	@include medias(medio) {
+	}
+	@include medias(desktop) {
+		
+	}
+}
+
+//Contacto
+.ctcoH2{
+	@include text($fsz-md, $black, $mainFont, left);	
+	font-weight: $light;
+	@include dFlex (column, center, left);
+	padding-left: 5px;
+	background-image: url(../img/sobreVale/fondo.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 15vh;
+}
+
+.ctcoDiv{
+	background-color: $secondaryColor;
+	padding: 50px;
+	.ctcoDiv2{
+		background-color: $white;
+		padding: 10px;
+	}
+}

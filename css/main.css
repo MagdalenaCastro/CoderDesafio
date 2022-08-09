@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
+.footerCtr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA;
+  padding: 5px;
+}
+.footerCtr .footerLogo {
+  height: 30px;
+  width: 30px;
+}
+.footerCtr .footerPlt {
+  font-size: 0.5em;
+  color: #062B44;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.dst {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.idxSct1Div {
+  background-image: url(../img/index/primeraPantalla-mf.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+.idxSct1Div .idxSct1H1 {
+  margin-top: 10%;
+  font-size: 2em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.idxSct1Div .idxSct1H3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+@media (min-width: 1000px) {
+  .idxSct1Div {
+    background-image: url(../img/index/valeria-ds.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .idxSct1Div .idxSct1H1 {
+    margin-left: 0px;
+    font-size: 4em;
+    color: #F8F8F8;
+    font-family: "Roboto", sans-serif;
+    text-align: bottom;
+  }
+  .idxSct1Div .idxSct1H3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #F8F8F8;
+  }
+}
+
+.idxSct2Div {
+  padding: 0 10px;
+}
+.idxSct2Div .idxSct2Div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 6px 1px rgba(231, 232, 235, 0.6);
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(231, 232, 235, 0.6);
+  -moz-box-shadow: 1px 1px 6px 1px rgba(231, 232, 235, 0.6);
+  margin: 5px;
+  padding: 5px 0px;
+}
+.idxSct2Div .idxSct2Div2 .idxSct2H2 {
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+}
+.idxSct2Div .idxSct2Div2 .idxSct2P {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1000px) {
+  .idxSct2Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.idxSct3Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #6AA5A4;
+}
+.idxSct3Div .idxSct3Img {
+  height: 50%;
+  width: 100%;
+}
+.idxSct3Div .idxSct3H3 {
+  font-size: 1.2em;
+  color: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin: 5px 0;
+}
+.idxSct3Div .idxSct3P {
+  font-size: 1em;
+  color: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+@media (min-width: 1000px) {
+  .idxSct3Div {
+    display: flex;
+    flex-direction: row;
+  }
+  .idxSct3Div .idxSct3Img {
+    height: 450px;
+    width: 450px;
+    margin-right: 10px;
+  }
+}
+
+.carruselDsk {
+  display: none;
+}
+
+.idxSct4H3 {
+  font-size: 1.2em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.idxSct4P {
+  font-size: 1em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.idxSct4Div {
+  padding: 0 20px 0 20px;
+}
+
+.idxSctInp {
+  font-size: 0.7em;
+  border: none;
+  height: 5px;
+}
+
+.idxSctSnd {
+  font-size: 0.7em;
+}
+
+@media (min-width: 1000px) {
+  .carrusel {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .idxSctInp {
+    font-size: 10rem;
+  }
+}
+
+.svSctH2 {
+  font-size: 2.5em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 5px;
+  background-image: url(../img/sobreVale/fondo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 15vh;
+}
+
+.svSctDiv {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.svSctDiv .svSctP {
+  padding: 5px;
+  font-size: 1em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+.svSctDiv .svSctImg {
+  height: 300px;
+  width: 280px;
+}
+
+@media (min-width: 1000px) {
+  .svSctDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .svSctDiv2 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .svSctP {
+    width: 60%;
+  }
+}
+
+.nvdsSctH3 {
+  font-size: 2.5em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 5px;
+  background-image: url(../img/sobreVale/fondo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 15vh;
+}
+
+.nvdsSctDiv {
+  background-color: #97BFBF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.nvdsSctDiv .nvdsSctDiv2 {
+  background-color: #F8F8F8;
+  height: 50%;
+  width: 80%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nvdsSctDiv .nvdsSctDiv2 .linea {
+  margin-top: 5px;
+  height: 2px;
+  width: 50px;
+  background-color: #6AA5A4;
+}
+.nvdsSctDiv .nvdsSctDiv2 .nvdsSctH2 {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.nvdsSctDiv .nvdsSctDiv2 .nvdsSctP {
+  font-size: 1em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+
+.nvdsSct4H3 {
+  font-size: 2em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.carruselDsk {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .nvdsSctDiv {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mf {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carruselDsk {
+    margin: 30px;
+    display: flex;
+  }
+}
+
+.lbrSctH3 {
+  font-size: 2.5em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 5px;
+  background-image: url(../img/sobreVale/fondo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 15vh;
+}
+
+@media (min-width: 1000px) {
+  .librosFlex {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.ctcoH2 {
+  font-size: 2.5em;
+  color: #062B44;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 5px;
+  background-image: url(../img/sobreVale/fondo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 15vh;
+}
+
+.ctcoDiv {
+  background-color: #97BFBF;
+  padding: 50px;
+}
+.ctcoDiv .ctcoDiv2 {
+  background-color: #F8F8F8;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

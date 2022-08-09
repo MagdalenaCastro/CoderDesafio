@@ -1,0 +1,15 @@
+.footerCtr{
+	@include dFlex (row, center, center);
+	background-color: #F8F9FA;
+	padding: 5px;
+	.footerLogo{
+		height: 30px;
+		width: 30px;
+	}
+	.footerPlt{
+		font-size: .5em;
+		color: $black;
+		text-decoration: none;
+		margin: 0 2px;
+	}
+}
